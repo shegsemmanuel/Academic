@@ -1,4 +1,4 @@
-import Dropdownone from './Dropdownone';
+import Dropdownone from "./dropdownone";
 
 const Banner = () => {
   return (
@@ -49,7 +49,7 @@ const Banner = () => {
           <div>
             <div>
               <div>
-                 <Dropdownone />
+                 < Dropdownone />
               </div>
             </div>
           </div>
