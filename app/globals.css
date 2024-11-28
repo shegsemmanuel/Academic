@@ -2,20 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=SUSE:wght@100..800&display=swap');
+
+* {
+    outline: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+html {
+    --scroll-behavior: smooth!important;
+    scroll-behavior: smooth!important;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: "SUSE", sans-serif;
+    background-color: #060E30;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.banner-image {
+    background-image: url('/assets/banner/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    background-image: linear-gradient(90deg, #FFAA32 60%, #EF543E 93%);
+}
+
+button:hover {
+    background-position: left;
+    background-size: 200%;
+    transition: 0.5s;
+}
+
+.boxShadow {
+    box-shadow: 0px 64px 64px -48px #F5EEE8;
+}
+
+.bannerBorder{
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nowhitespace {
+    white-space: nowrap;
+}
+
+.mentorShadow {
+    box-shadow: 0px 4px 20px rgba(110, 127, 185, 0.1);
+}
+
+.position-green {
+    top: 62%;
+    right: 0%;
+    left: 54%;
+    bottom: 60%;
+}
+
+.footer-icons{
+    transition: .5s;
+}
+
+.footer-icons:hover{
+    transform: translateY(-8px);
+}
+
+.space-links {
+    transition: .3s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .banner-image {
+        background-image: url('/assets/banner/backgroundmobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
