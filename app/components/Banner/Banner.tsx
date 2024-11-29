@@ -1,5 +1,6 @@
 import Dropdownone from "./dropdownone";
 
+
 const Banner = () => {
   return (
     <main className='banner-image'>
@@ -46,10 +47,16 @@ const Banner = () => {
           </div>
 
               {/* Dropdown Buttons */}
-          <div>
+          <div className="mx-auto bg-white max-w-4xl mt-24 pt-6 pb-8 px-6 lg:px-12 lg:max-w-4xl rounded-lg">
             <div>
               <div>
-                 < Dropdownone />
+                 <Dropdownone />
+              </div>
+                  <button className="w-full py-4 px-3 font-bold rounded-full">
+                    Start
+                  </button>
+              <div>
+
               </div>
             </div>
           </div>
