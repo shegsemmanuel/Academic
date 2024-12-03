@@ -75,10 +75,18 @@ button:hover {
     cursor: pointer;
 }
 
+.bannerBorder {
+    border-left: 1px solid #fff;
+}
+
 @media screen and (max-width: 767px) {
     .banner-image {
         background-image: url('/assets/banner/backgroundmobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    
+    .bannerBorder {
+        border-left: none;
     }
 }
