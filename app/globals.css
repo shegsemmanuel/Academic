@@ -89,4 +89,10 @@ button:hover {
     .bannerBorder {
         border-left: none;
     }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
 }

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 
 interface NavigationItem {
@@ -25,7 +25,7 @@ const Data = () => {
     <div>
       <div>
         <div>
-            <div className=' inline-block'>
+            <div className='nav'>
                 {
                    navigation.map((item) =>(
                     <Link
