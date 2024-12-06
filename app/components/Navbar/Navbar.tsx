@@ -7,6 +7,8 @@ import Link from "next/link";
 import Contactus from "./Contactus";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata"
+import Signdialog from "./Signdialog";
+import Registerdialog from "./Registerdialog";
 
 
 
@@ -72,6 +74,12 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
+
+                    {/* Signin Dialog  */}
+                    <Signdialog />
+
+                    {/* Signin Dialog  */}
+                    <Registerdialog />
 
                 {/* Hamberger */}
                 <div className="block md:hidden">

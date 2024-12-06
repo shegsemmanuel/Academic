@@ -91,7 +91,7 @@ const Banner = () => {
               </div>
 
               <div className="col-span-3 sm:col-span-2 mt-2">
-              <button className="w-full mt-1 py-4 px-3 font-bold rounded-full">
+              <button className=" global-button w-full mt-1 py-4 px-3 font-bold rounded-full">
                       Start
                 </button> 
               </div>

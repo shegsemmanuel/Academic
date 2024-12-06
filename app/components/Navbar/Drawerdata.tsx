@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Contactus from './Contactus'
 
 
 interface NavigationItem {
@@ -22,10 +23,10 @@ function classNames(...classes: string[]) {
 
 const Data = () => {
   return (
-    <div>
-      <div>
-        <div>
-            <div className='nav'>
+    <div className='rounded-md max-w-sm w-full mx-auto'>
+      <div className='flex-1 space-y-4 py-1'>
+        <div className='sm:block'>
+            <div className='nav' >
                 {
                    navigation.map((item) =>(
                     <Link
@@ -34,11 +35,23 @@ const Data = () => {
                     className={classNames(
                         item.current ? 'bg-gray-900 text-orange' : 'text-white hover:bg-gray-700 hover:text-orange', 'block py-2 text-base font-medium'
                     )}
+                    aria-current={item.current ? 'page' : undefined}
                     >
                        {item.name} 
                     </Link>
                    ))
                 }
+                <Contactus />
+                <div className='mt-4'></div>
+                <button
+                className='global-button bg-white w-full hover:text-white text-black border border-purple font-medium py-2 px-4 rounded'>
+                  Sign In
+                </button>
+
+                <button
+                className='global-button bg-white w-full hover:text-white text-black border border-pur font-medium py-2 px-4 rounded'>
+                  Register
+                </button>
             </div>
         </div>
       </div>
