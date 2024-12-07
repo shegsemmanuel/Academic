@@ -1,5 +1,7 @@
+"use client"
 import Link from 'next/link';
 import React from 'react'
+import { Fade } from 'react-awesome-reveal';
 
 // MIDDLE LINKS DATA
 interface ProductType {
@@ -23,11 +25,12 @@ const products: ProductType[] = [
 
 const Footer = () => {
   return (
-    <div className='bg-[#060E30] -mt-64' id='first-section'>
+     <Fade direction="up" delay={400} cascade damping={1e-1} triggerOnce={true}>
+            <div className='bg-[#060E30] -mt-55' id='first-section'>
        <div className='mx-auto max-w-2xl pt-64 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
         <div className='mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8'>
             {/* Column 1 */}
-            <div className='col-span-4'>
+            <div className='col-span-4 -mt-10'>
                 <img
                 src={'/assets/logo/Logo2.svg'}
                 alt='logo'
@@ -60,7 +63,7 @@ const Footer = () => {
             {
                 products.map((product) => (
                     <div key={product.id}
-                     className='group relative col-span-2'
+                     className='group relative col-span-2 -mt-5 '
                     >
                         <p className='text-white text-xl font-semibold mb-9'>{product.section}</p>
                         <ul>
@@ -77,7 +80,7 @@ const Footer = () => {
             }
 
             {/* column 4 */}
-            <div className='col-span-4'>
+            <div className='col-span-4 -mt-5'>
                 <h3 className='text-white text-xl font-semibold mb-6'>Stay up to date</h3>
 
                 <div className='relative text-white focus-within:text-white flex flex-row-reverse'>
@@ -101,6 +104,8 @@ const Footer = () => {
         </div>
 
     </div>
+     </Fade>
+    
   )
 }
 
