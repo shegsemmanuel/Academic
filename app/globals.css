@@ -43,6 +43,13 @@ body {
     background-size: cover;
 }
 
+.bg-newsletter {
+    background-image: url('/assets/newsletter/hands.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* button {
     background-image: linear-gradient(90deg, #FFAA32 60%, #EF543E 93%);
 }
@@ -103,6 +110,16 @@ button.global-button {
 
 .bannerBorder {
     border-left: 1px solid #fff;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #fff;
+    cursor: pointer;
+}
+
+.slick-dots li button:before {
+    color: #EF543E;
+    opacity: 1;
 }
 
 @media screen and (max-width: 767px) {
