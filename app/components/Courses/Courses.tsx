@@ -124,9 +124,9 @@ const NameList = () => {
     selectedNames = cloudComputing;
   }
 
-  const nameElements = selectedNames.map((name, index) => (
+  const nameElements = selectedNames.map((name, number) => (
       <Fade direction='up' delay={400} cascade damping={1e-1} triggerOnce={true}>
-          <div key={index}>
+          <div key={number}>
       <div className='text-lg sm:text-sm py-5 px-8 lg:px-8 lg:py-8 bg-[#141c3e]'>
        <div className='lg:aspect-w-1 lg:aspect-h-1 overflow-hidden rounded-full group-hover:opacity-75 border-2 border-white ring-2'>
         <img
