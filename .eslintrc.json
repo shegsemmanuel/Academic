@@ -2,13 +2,6 @@
   "rules": {
     "prefer-const": "off",
     "@next/next/no-img-element": "off"
-  }
- 
-}
-
-
-{
+  },
   "extends": ["next/core-web-vitals", "next/typescript"]
-  
 }
-

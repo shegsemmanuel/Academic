@@ -18,10 +18,10 @@ const Navbarin: React.FC = () => {
         }
 
         // Queue our function call for the next frame
-        frame = requestAnimationFrame{() =>{
+        frame = requestAnimationFrame(() =>{
           // Call our Function and pass any params we received
           fn(...params);
-        }};
+        });
       }
     };
 
