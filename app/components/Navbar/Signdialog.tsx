@@ -5,14 +5,15 @@ import { LockClosedIcon } from "@heroicons/react/24/outline";
 import { Fragment, useState } from "react";
 
 const Signin = () => {
-  let [isOpen, setIsOpen] = useState(false);
+  let [isOpen, constIsOpen] = useState(false);
+
 
   const closeModal = () => {
-    setIsOpen(false);
+    constIsOpen(false);
   };
 
   const openModal = () => {
-    setIsOpen(true);
+    constIsOpen(true);
   };
 
   return (

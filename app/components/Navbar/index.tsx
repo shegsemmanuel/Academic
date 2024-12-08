@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useEffect } from 'react'
-import Navbar from './Navbar'
+import React, { useEffect } from 'react';
+import Navbar from './Navbar';
 
 const Navbarin: React.FC = () => {
   useEffect(() => {
@@ -29,7 +29,7 @@ const Navbarin: React.FC = () => {
           // so we can use it in our stylesheets
     const storeScroll = () => {
       document.documentElement.dataset.scroll = window.scrollY.toString();
-    }
+    };
 
     // Listen for new scroll events, here we debounce our 'storeScroll' function
     document.addEventListener('scroll', debounce(storeScroll), { passive:true });
@@ -41,7 +41,7 @@ const Navbarin: React.FC = () => {
     <>
         <Navbar />
     </>
-  )
-}
+  );
+};
 
-export default Navbarin
+export default Navbarin;
