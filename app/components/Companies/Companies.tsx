@@ -44,7 +44,7 @@ export default class MultipleItems extends Component {
             responsive : [
                 {
                     breakpoint: 1024,
-                    setting: {
+                    settings: {
                         slidesToShow: 4,
                         slidesToScroll: 1,
                         infinite: true,
@@ -53,7 +53,7 @@ export default class MultipleItems extends Component {
                 },
                 {
                     breakpoint: 700,
-                    setting: {
+                    settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
@@ -62,7 +62,7 @@ export default class MultipleItems extends Component {
                 },
                 {
                     breakpoint: 500,
-                    setting: {
+                    settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
