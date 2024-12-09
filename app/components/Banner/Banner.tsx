@@ -17,7 +17,7 @@ const Banner = () => {
                 triggerOnce={true}
               >
                      {/* Banner Heading */}
-                   <h1 className='text-4xl font-bold -tracking-tight sm:text-75px md:4px'>
+                   <h1 className='text-4xl font-bold -tracking-tight sm:text-75px mt-3 md:4px'>
                        Grow your skills <br /> & Advance Career
                     </h1>
               </Fade>

@@ -8,9 +8,7 @@ interface Data {
 }
 
 const data: Data[] = [
-    {
-       imgSrc: "/assets/SlickCompany/airbnb.svg" 
-    },
+   
     {
         imgSrc: "/assets/slickCompany/hubspot.svg"
     },

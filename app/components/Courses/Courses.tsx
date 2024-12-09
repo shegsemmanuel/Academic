@@ -176,7 +176,7 @@ const NameList = () => {
           </div>
         </div>
 
-        <div className='flex nowhitespace space-x-5 rounded-xl p-1 overflow-x-auto'>
+        <div className='flex nowhitespace space-x-8 px-10 rounded-xl p-1 overflow-x-auto'>
               {/* For Desktop View */}
           <div onClick={() => setSelectedButton('webdevelopment')}
             className={"text-white" + (selectedButton === 'webdevelopment' ? 'text-black border-b-2 border-orange' : 'text-lightgrey') + "pb-2 text-lg hidden sm:block"}>Web Development</div>
